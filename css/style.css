@@ -1,0 +1,298 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+/* Basic */
+/*----------HEADER--------*/
+
+header{
+	padding:24px 0;
+	position: fixed;
+	width: 100%;
+	z-index:8;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	}
+header nav ul{
+	float: right;
+	margin-top: 5px;
+}
+header nav ul li{
+	display: inline-block;
+	padding: 0 10px;
+}
+header nav ul li a{
+	color:#2c364b;
+	font-weight:700;
+}
+header nav ul li a:hover{
+	color:#48baff;
+}
+
+header .main_logo {
+	float:left;
+}
+header .main_logo a {
+	height: 37px;
+	width: 154px;
+	background:url(../css/img/ft_logo.png) no-repeat 0 0;
+	display:block;
+	text-indent: -999em;
+}
+
+
+/*----------MAIN PART--------*/
+
+.main_part{
+	background:url(../css/img/ft_mainbg.jpg) no-repeat center;
+	display:block;
+	min-height:897px;
+	background-size:cover;
+	text-align:center;
+}
+.main_part H2{
+	font-size:120px;
+	color:#ffffff;
+	font-weight:700;
+	margin:283px 0 26px;
+}
+.main_part span.span_line{
+	height:2px;
+	width:600px;
+	background:#15a4fa;
+	display:block;
+	margin: 0 auto;
+}
+.main_part p{
+	font-size:20px;
+	line-height:47px;
+	color:#ffffff;
+	margin: 25px 55px;
+	font-family: 'Lato', sans-serif;
+}
+.main_part .action{
+	background:none;
+	border: 1px solid #15a4fa;
+	color:#ffffff;
+	font-size:18px;
+	height:55px;
+	width:180px;
+	border-radius:3px;
+}
+.main_part .action:hover{
+	background:#2d3950;
+	border: 1px solid #fff;
+	color:#fff;
+	font-size:18px;
+	height:55px;
+	width:180px;
+	border-radius:3px;
+	transition:all;
+	transition-duration: 1s;
+}
+
+/* PURE DESIGN */
+.design-section{
+	background: #f6f9f9;
+}
+.design-section h1{
+	color: #2d3950;
+}
+.design-section p{
+	color: #999999;
+	font-size: 18px;
+	margin-top: 16px;
+}
+
+/* Featured Section */
+.featured-section{}
+.icon-box{}
+.icon-box i{
+	height: 100px;
+	width: 100px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 100px;
+	color: #ffffff;
+	margin: auto;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+52,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 52%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 52%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 52%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+}
+.featured-section h4{
+	font-size: 20px;
+	margin: 16px 0;
+}
+.featured-section p{
+	font-size: 16px;
+	opacity: 0.5;
+}
+
+/* Showcase Section */
+.showcase-section{
+	background: #f6f9f9;
+	padding-bottom: 36px;
+}
+.showcase-content{}
+.showcase-content h1{}
+.showcase-content p{}
+
+.images{
+	position: relative;
+	margin-bottom: 30px;
+}
+.images::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 0;
+	background: rgba(44, 172, 247, 0.8);
+	transition: all 0.4s ease;
+}
+.images:hover::before{
+	bottom: 100%;
+	height: 100%;
+}
+.images img{}
+
+.images-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 20px;
+	transition: all 0.4 ease;
+	opacity: 0;
+}
+.images:hover .images-icon{
+	opacity: 1;
+}
+.images-icon i:hover{
+	color:#2d3950;
+	transition:all;
+	transition-duration:1s;
+	border:2px solid #2d3950;
+	cursor: pointer;
+}
+.images-icon i{
+	border: 1px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 4px;
+}
+
+/* Stey Section */
+.stay-section{
+	background: url(../css/img/stay-with-ws.png) no-repeat center;
+	display: block;
+	background-size: cover;
+	min-height: 700px;
+	padding:70px 0 105px;
+}
+.stay-section h1{
+	color: #ffffff;
+}
+.stay-section p{
+	line-height: 23px;
+	color: #999999;
+	margin: 15px 40px
+}
+.stay-section form input[type="text"]{
+	height: 60px;
+	width: 535px;
+	display: block;
+	margin: 0 auto 20px;
+	background: no-repeat;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	padding-left: 20px;
+	transition: all;
+	transition-duration: 0.5s;
+}
+.stay-section form input[type="text"]:hover, .stay-section form input[type="text"]:focus{
+	border:1px solid #15a4fa;
+}
+.stay-section form textarea{
+	height:160px;
+	width:535px;
+	background:none;
+	border:1px solid #999999;
+	border-radius:3px;
+	padding-left:20px;
+	padding-top:25px;
+	display:block;
+	margin:0 auto 10px;
+	transition:all;
+	transition-duration:0.5s;
+}
+.stay-section form textarea:hover, .stay-section form textarea:focus{
+	border:1px solid #15a4fa;
+}
+.stay-section .submit{
+	width: 535px;
+	margin: 0 auto;
+	text-align: left;
+	color: #ffffff;
+}
+.stay-section .submit input[type="checkbox"]{
+	margin: 30px 10px 0 0;
+}
+.stay-section .submit input[type="submit"]{
+	float: right;
+	height: 47px;
+	width: 170px;
+	background: none;
+	border: 1px solid #415866;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.stay-section .submit input[type="submit"]:hover{
+	border: 1px solid #000000;
+	background: #ffffff;
+	color: #000000;
+	transition: all;
+	transition-duration: 0.5s;
+}
+
+/* Footer */
+
+footer{
+	padding: 22px;
+}
+footer p{
+	margin-top: 10px;
+	opacity: 0.7;
+}
+footer p a{
+	color: #999999;
+}
+footer p a:hover{
+	color:#48baff;
+}
+footer .social{
+	text-align: center;
+}
+footer .social a{
+	height: 40px;
+	width: 40px;
+	display: inline-block;	
+	background :#15a4fa;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 0 2px;
+}
+footer .social a:hover{
+	background:#2d3950;
+	transition: all;
+	transition-duration: 0.5s;
+}
